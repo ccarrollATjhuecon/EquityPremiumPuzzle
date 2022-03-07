@@ -1,0 +1,25 @@
+\providecommand{\noopsort}[1]{} \providecommand{\singleletter}[1]{#1}
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Mankiw and Zeldes]{Mankiw and
+  Zeldes}{1989}{mankiw&zeldes:stockholders}
+\textsc{Mankiw, N.~Gregory,  {and} Stephen~P. Zeldes}  (1989): ``The
+  Consumption of Stockholders and Non Stockholders,'' \emph{Journal of
+  Financial Economics}, 15, 145--61.
+
+\harvarditem[Mehra and Prescott]{Mehra and Prescott}{1985}{mehraPrescottPuzzle}
+\textsc{Mehra, Rajnish,  {and} Edward~C. Prescott}  (1985): ``The Equity
+  Premium: A Puzzle,'' \emph{Journal of Monetary Economics}, 15, 145--61,
+  Available at {
+  \url{http://ideas.repec.org/a/eee/moneco/v15y1985i2p145-161.html}}.
+
+\end{thebibliography}

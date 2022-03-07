@@ -1,0 +1,264 @@
+\documentclass{handout}
+\usepackage{handoutSetup}\usepackage{econtexShortcuts}  
+\usepackage{econark}
+\begin{document}
+\handoutHeader
+
+\begin{verbatimwrite}{\jobname.title}
+  The Equity Premium Puzzle and the Riskfree Rate
+\end{verbatimwrite}
+
+\handoutNameMake
+
+
+\cite{mehraPrescottPuzzle} consider a representative agent solving the joint consumption and portfolio allocation problem:
+\begin{equation}\begin{gathered}\begin{aligned}
+      \vFunc(m_{t}) & =  \max_{\{c_{t},\riskyshare_{t}\}} ~~\uFunc(c_{t}) + \Ex_{t}\left[\sum_{n=1}^{\infty} \Discount^{n} \uFunc(c_{t+n}) \right]
+      \\  & \text{s.t.}   \nonumber
+      \\      m_{t+1} & =  (m_{t}-c_{t})\Rport_{t+1} + y_{t+1}  
+      \\      \Rport_{t+1} & =  \riskyshare_{t}\Risky_{t+1}+(1-\riskyshare_{t})\Rfree
+    \end{aligned}\end{gathered}\end{equation}
+where $\Rfree$ denotes the return on a perfectly riskless asset and $\Risky_{t+1}$ denotes the return on equities (the risky asset) held between periods $t$ and $t+1$; $\riskyshare_{t}$ is the share of end-of-period savings invested in the risky asset; $\Rport_{t+1}$ is the portfolio-weighted rate of return; and $y_{t+1}$ is noncapital income in period $t+1$.
+
+As usual, the objective can be rewritten in recursive form:
+\begin{equation}\begin{gathered}\begin{aligned}
+      \vFunc(m_{t}) & =  \max_{\{c_{t},\riskyshare_{t}\}} ~~\uFunc(c_{t}) +\beta \Ex_{t}\left[\vFunc\left(\underbrace{[\riskyshare_{t}\Risky_{t+1}+(1-\riskyshare_{t})\Rfree]}_{{\Rport}_{t+1}}(m_{t}-c_{t})+{y}_{t+1}\right)\right]
+    \end{aligned}\end{gathered}\end{equation}
+
+The first order condition with respect to $c_{t}$ is
+\begin{equation}\begin{gathered}\begin{aligned}
+      \uFunc^{\prime}(c_{t}) & =  \beta \Ex_{t}[ \Rport_{t+1}\vFunc^{\prime}({m}_{t+1})] \label{eq:cfoc}.
+    \end{aligned}\end{gathered}\end{equation}
+and, taking $\mNrm$ and $\cNrm$ as given, the FOC with respect to $\riskyshare_{t}$ is
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[(\Risky_{t+1}-\Rfree)\vFunc^{\prime}({m}_{t+1})({m}_{t}-{c}_{t})] & =  0 
+      \\      \Ex_{t}[(\Risky_{t+1}-\Rfree)\vFunc^{\prime}({m}_{t+1})\phantom{({m}_{t}-{c}_{t})}] & =  0 \label{eq:gamfoc}
+      .
+    \end{aligned}\end{gathered}\end{equation}
+
+But the usual logic of the \handoutC{Envelope} theorem tells us that 
+\begin{equation}\begin{gathered}\begin{aligned}
+      \uFunc^{\prime}(c_{t+1}) & =  \vFunc^{\prime}(m_{t+1}), \label{eq:envelope}
+    \end{aligned}\end{gathered}\end{equation}
+so, substituting (\ref{eq:envelope}) into (\ref{eq:cfoc}) and (\ref{eq:gamfoc}), the above FOC's reduce to
+\begin{equation}\begin{gathered}\begin{aligned}
+      \uFunc^{\prime}(c_{t}) & =  \Ex_{t}\left[\beta  \Rport_{t+1} \uFunc^{\prime}({c}_{t+1})\right] \label{eq:ceuler}
+      \\      \Ex_{t}[(\Risky_{t+1}-\Rfree)\uFunc^{\prime}({c}_{t+1})] & =  0 %\label{eq:gameuler}
+    \end{aligned}\end{gathered}\end{equation}
+
+Now assume CRRA utility, $\uFunc(c) = c^{1-\CRRA}/(1-\CRRA)$ and divide both 
+sides by $c_{t}^{-\CRRA}$ to get
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[(c_{t+1}/c_{t})^{-\CRRA}(\Risky_{t+1}-\Rfree)] & =  0. \label{eq:gameulernew}
+    \end{aligned}\end{gathered}\end{equation}
+
+
+\noindent Now recall the following two facts:
+
+\begin{quote}
+  \begin{itemize}
+
+  \item[Fact 1: ] If $\Delta c_{t+1}/c_{t}$ is small, $c_{t+1}/c_{t} \approx 1+ \Delta \log c_{t+1}.$
+
+  \item[Fact 2: ] If $z$ is small, $(1+z)^{\lambda} \approx 1 + \lambda z$.
+
+  \end{itemize}
+\end{quote}
+
+\noindent Using these two facts, equation (\ref{eq:gameulernew}) can be approximated by
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[(1-\CRRA \Delta \log {c}_{t+1})(\Risky_{t+1}-\Rfree)] & \approx  0.
+    \end{aligned}\end{gathered}\end{equation}
+
+\noindent Using one more fact,
+\begin{quote}
+  \begin{itemize}
+  \item[Fact 3:] $\Ex [xy] = \Ex [x]\Ex [y] + \text{cov}(x,y),$
+  \end{itemize}
+\end{quote}
+we get
+\begin{equation}
+  (1-\CRRA \Ex_{t}[\Delta \log {c}_{t+1}])(\Rfree - \Ex_{t}[\Risky_{t+1}])+\text{cov}_{t}(-\CRRA \Delta \log {c}_{t+1},-\Risky_{t+1})  \approx  0  
+\end{equation}
+or
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[\Risky_{t+1}]-\Rfree & \approx  \frac{\CRRA \text{cov}_{t}(\Delta \log {c}_{t+1},\Risky_{t+1})}{1-\CRRA \Ex_{t}[ \Delta \log {c}_{t+1}]} 
+      \\                             & \approx  \CRRA \text{cov}_{t}(\Delta \log {c}_{t+1},\Risky_{t+1}) \label{eq:eqprem}
+    \end{aligned}\end{gathered}\end{equation}
+\noindent where the last approximation holds because $\Ex_{t}[\Delta 
+\log {c}_{t+1}]$ is small.  
+
+\vspace{.25in}
+
+\noindent {\it \bf The Equity Premium Puzzle}
+
+
+Because this expression must hold at all $t$, we can check it 
+empirically by calculating empirical estimates of the two components 
+and assuming that the sample averages correspond to the representative 
+agent's expectations.  That is, if we have data for periods $1 \ldots 
+n $, we assume that the unconditional expectations correspond to the 
+sample means, $\Ex [\Risky] = (1/n) \sum_{s=1}^{n} \Risky_{s}$; $\Ex [\Delta 
+\log c] = (1/n) \sum_{s=1}^{n} \Delta \log c_{s}$; and 
+$\text{cov}(\Delta \log c,\Risky) = (1/n) 
+\sum_{s=1}^{n} (\Delta \log c_{s} - \Ex [\Delta \log 
+c])(\Risky_{s}-\Ex [\Risky]).$
+
+The equity premium puzzle is essentially that $\text{cov}(\Delta \log 
+c,\Risky)$ is very small (about 0.004) but $\Ex [\Risky]-\Rfree$ is about 0.08 
+(stocks have earned real returns of about 8 percent more than riskless 
+assets over the historical period), which means that the only way 
+equation (\ref{eq:eqprem}) can hold is if $\CRRA$ is implausibly large 
+(these values imply a value of $\CRRA=20$).
+
+How do we know what plausible values of $\CRRA$ are?  Consider the 
+following.  You must choose between a gamble in which you consume 
+\$50,000 for the rest of your life with probability 0.5 and \$100,000 
+with probability 0.5, or consuming some amount $X$ with certainty.  
+The coefficient of relative risk aversion determines the $X$ which 
+would make you indifferent between consuming X or being exposed to the 
+gamble.  For example, if $\CRRA = 0$, then you have no risk aversion at 
+all and you will be indifferent between \$75,000 with certainty and 
+the 50/50 gamble with expected value of \$75,000.  Here are the values 
+of X associated with different values of $\CRRA$ (table taken from 
+Mankiw and Zeldes~\cite{mankiw&zeldes:stockholders}.)
+
+\vspace{.25in}
+
+\begin{table}
+  \center
+  \begin{tabular}{|c|c|}
+    \hline  $\CRRA$  & $     X $ 
+    \\ \hline
+    1       &       70,711
+    \\      3       &       63,246
+    \\      5       &       58,565
+    \\      10      &       53,991
+    \\      20      &       51,858
+    \\      30      &       51,209
+    \\      $\infty$        &       50,000 
+    \\ \hline
+  \end{tabular}
+\end{table}
+
+% \vspace{.25in}
+\noindent {\it \bf The Riskfree Rate Puzzle}
+
+Rewrite the consumption Euler equation (\ref{eq:ceuler}) as 
+\begin{equation}\begin{gathered}\begin{aligned}
+      \uFunc^{\prime}(c_{t}) & =  \Ex_{t}\left[\beta (\Rfree  + \riskyshare_{t} [\Risky_{t+1} - \Rfree])\uFunc^{\prime}({c}_{t+1})\right] \label{eq:newgam}
+    \end{aligned}\end{gathered}\end{equation}
+and note that from (\ref{eq:gameulernew}) we know that $\Ex_{t}[\beta 
+\riskyshare_{t}(\Risky_{t+1}-\Rfree)\uFunc^{\prime}({c}_{t+1})] = 0$ so that 
+(\ref{eq:newgam}) reduces to the ordinary Euler equation
+\begin{equation}\begin{gathered}\begin{aligned}
+      \uFunc^{\prime}(c_{t}) & =  \Ex_{t}[\beta \Rfree \uFunc^{\prime}({c}_{t+1})]
+      \\  1 & =  \beta \Rfree \Ex_{t}[ ({c}_{t+1}/c_{t})^{-\CRRA}].
+    \end{aligned}\end{gathered}\end{equation}
+Using the same `facts' and approximations as above, we get the 
+standard approximation to the Euler equation,
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Delta \log c_{t+1} & \approx  (1/\CRRA) (\rfree - \timeRate).
+    \end{aligned}\end{gathered}\end{equation}
+
+The `riskfree rate puzzle' is that average consumption growth per \opt{MarginNotes}{\marginpar{\tiny In principle, riskfree rate puzzle might be explicable by overlapping generations.  In practice, it's hard to make this work well.  Note also that a precautionary saving motive reduces the riskfree rate puzzle by adding the variance term to consumption growth.}}
+capita has been about 1.5 percent (in the US in the postwar period) 
+while real riskfree interest rates have been at most 1 percent.  Even
+if we assume a time preference rate of $\timeRate=0$ (no impatience 
+at all, e.g. $\beta=1$), the only way this equation can hold is if $\CRRA$ is a
+very small number (maybe even less than one).  Of course, this
+is precisely the opposite of the conclusion of the equity premium
+puzzle, which implies the $\CRRA$ must be very large.
+
+
+\pagebreak
+\centerline{\Large Appenix}
+\appendix
+\section{Solution for $t$ when $\cFunc_{t+1}$ is Known}
+
+In either the life cycle version of the model or an infinite horizon model that is being solved by time iteration, the consumption function in $t+1$ will be known.
+
+Designating that consumption function as $\cFunc_{t+1}(\mNrm)$, with derivative $\cFunc^{\prime}_{t+1}(\mNrm)$, we can derive an approximation to the optimal portfolio share as follows.
+
+\newcommand{\ERport}{\bar{\Rport}}
+\newcommand{\cNxt}{\bar{\cFunc}_{t+1}}
+\newcommand{\orderTwo}{+(1/2)(\riskyshare\EpremLog_{t+1}{a}_{t})^{2}\cFunc^{\prime\prime}_{t+1}}
+\renewcommand{\orderTwo}{}
+
+First define $\ERport_{t+1}(\riskyshare)=\Ex_{t}[\Rport_{t+1}]$ and define consumption at the expectation of the portfolio return as
+\begin{align}
+\bar{\cNrm}_{t+1} &= \cNrm_{t+1}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
+\\ \bar{\cNrm}^{\prime}_{t+1}& = \cNrm_{t+1}^{\prime}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
+\end{align}
+
+For simplicity, we will henceforth assume that $\yNrm_{t+1}=1$.  Results below all go through for the case where $\Ex_{t}[\yNrm_{t+1}]=1$.
+
+Using the fact that for a portfolio share of $\riskyshare$ the realized return premium will $\Rport_{t+1}=(\Risky_{t+1}-\Rfree)\riskyshare$, or (calling the realized equity premium $\EpremLog_{t+1}=(\Risky_{t+1}-\Rfree),$ start with the FOC for $\riskyshare$:
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[(\cFunc_{t+1}(\Rport_{t+1}{a}_{t}+1))^{-\CRRA}\EpremLog_{t+1}] & =  0 \label{eq:gameulernewnew}
+      \\ \Ex_{t}[(\cFunc_{t+1}((\Rport_{t+1}-\ERport_{t+1}+\ERport_{t+1}){a}_{t}+1))^{-\CRRA}\EpremLog_{t+1}] & =  0
+      \\ \Ex_{t}[(\cFunc_{t+1}((\ERport_{t+1}+\riskyshare\EpremLog_{t+1}){a}_{t}+1))^{-\CRRA}\EpremLog_{t+1}] & =  0
+      \\ \Ex_{t}[(\cNxt+\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo )^{-\CRRA}\EpremLog_{t+1}] & \approx  0
+      % \\ \Ex_{t}[(\cNxt+\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo )^{-\CRRA}\EpremLog_{t+1}] & \approx  0
+      \\ (\cNxt)^{-\CRRA}
+      \Ex_{t}[
+      (1+
+      \cNxt^{-1}(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo)
+      )^{-\CRRA}\EpremLog_{t+1}
+      ]
+      & \approx  0
+      \\ \Ex_{t}[(1+\cNxt^{-1}(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo))^{-\CRRA}\EpremLog_{t+1}]& \approx  0
+      \\ 
+      \Ex_{t}[
+      (1{-\CRRA}
+      \cNxt^{-1}(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo)
+      )\EpremLog_{t+1}
+      ]
+      & \approx  0
+    \end{aligned}\end{gathered}\end{equation}
+where the last step uses $(1+\epsilon)^{\delta} \approx (1+\delta \epsilon)$.
+
+Now define the proportional MPC out of an additional unit of portfolio return as
+\begin{equation}\begin{gathered}\begin{aligned}
+      \kappa & = \bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo\cNxt^{-1}
+    \end{aligned}\end{gathered}\end{equation}
+and recalling that $\EpremLog \equiv \Ex_{t}[\EpremLog_{t+1}]=-\sigma^{2}_{\EpremLog}/2$ substitute this into the foregoing to obtain
+\begin{equation}\begin{gathered}\begin{aligned}
+      \Ex_{t}[
+      (1{-\CRRA}
+      \left(
+        \kappa\riskyshare \EpremLog_{t+1}
+      \right)
+      )\EpremLog_{t+1}
+      ]
+      & \approx  0
+      \\ 
+      \Ex_{t}[
+      (1{-\CRRA}
+      \left(
+        \kappa\riskyshare \EpremLog_{t+1}
+      \right)
+      )]\Ex_{t}[\EpremLog_{t+1}]+\cov({-\CRRA}\kappa\riskyshare \EpremLog_{t+1},\EpremLog_{t+1})
+      & \approx  0
+      \\ 
+      (1-\CRRA \kappa\riskyshare \EpremLog)\EpremLog+\cov({-\CRRA}\kappa\riskyshare \EpremLog_{t+1},\EpremLog_{t+1})
+      & \approx  0
+      \\ 
+      (1-\CRRA \kappa\riskyshare \EpremLog) \EpremLog
+      & \approx  {\CRRA}\kappa\riskyshare \sigma^{2}_{\EpremLog}
+      \\ 
+      \EpremLog
+      & \approx  \riskyshare \left({\CRRA} \sigma^{2}_{\EpremLog}+\CRRA \EpremLog^{2}\right)\kappa
+      \\
+      \left(\frac{ \EpremLog}{{\CRRA}( \sigma^{2}_{\EpremLog}+ \EpremLog^{2})\kappa}\right)
+      & \approx  \riskyshare 
+    \end{aligned}\end{gathered}\end{equation}
+
+
+\clearpage 
+
+\input handoutBibMake
+
+
+
+\end{document}
