@@ -1,7 +1,9 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2020-02-02 v2.e}
-  *{class}  {handout}     {2019/11/18 v0.0}
+  *{file}   {./econtexRoot.tex}{0000/00/00 v0.0}
+  *{file}   {./Resources/econtexPaths.tex}{0000/00/00 v0.0}
+  *{class}  {./Resources/texmf-local/tex/latex/econtex}{0000/00/00 v0.0}
   *{package}{snapshot}    {2002/03/05 v1.14}
   *{package}{ifthen}      {2014/09/29 v1.1c}
   *{package}{changepage}  {2009/10/20 v1.0c}
@@ -70,7 +72,8 @@
   *{package}{footmisc}    {2011/06/06 v5.5b}
   *{package}{manyfoot}    {2019/08/03 v1.11}
   *{package}{nccfoots}    {2005/02/03 v1.2}
-  *{package}{handoutSetup}{0000/00/00 v0.0}
+  *{package}{perpage}     {2014/10/25 v2.0}
+  *{package}{./Resources/texmf-local/tex/latex/handoutSetup}{0000/00/00 v0.0}
   *{package}{handoutShortcuts}{0000/00/00 v0.0}
   *{package}{wasysym}     {2020/01/19 v2.4}
   *{package}{psibycus}    {2004/10/18 v4.5}
@@ -101,7 +104,7 @@
   *{package}{atveryend}   {2019-12-11 v1.11}
   *{package}{rerunfilecheck}{2019/12/05 v1.9}
   *{package}{uniquecounter}{2019/12/15 v1.4}
-  *{package}{econtexShortcuts}{0000/00/00 v0.0}
+  *{package}{./Resources/texmf-local/tex/latex/econtexShortcuts}{0000/00/00 v0.0}
   *{package}{econark}     {0000/00/00 v0.0}
   *{package}{subfiles}    {2020/02/14 v1.6}
   *{package}{import}      {2020/01/22 v6.0}
