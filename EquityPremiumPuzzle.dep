@@ -104,7 +104,7 @@
   *{package}{rerunfilecheck}{2019/12/05 v1.9}
   *{package}{uniquecounter}{2019/12/15 v1.4}
   *{package}{./Resources/texmf-local/tex/latex/econtexShortcuts}{0000/00/00 v0.0}
-  *{package}{econark}     {0000/00/00 v0.0}
+  *{package}{./Resources/texmf-local/tex/latex/econark}{0000/00/00 v0.0}
   *{package}{subfiles}    {2020/02/14 v1.6}
   *{package}{import}      {2020/01/22 v6.0}
   *{file}   {t3cmr.fd}    {2001/12/31 v0.0}

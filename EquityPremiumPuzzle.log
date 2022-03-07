@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:44
 entering extended mode
  \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**EquityPremiumPuzzle.tex
+**EquityPremiumPuzzle
 (./EquityPremiumPuzzle.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (./econtexRoot.tex (./Resources/econtexPaths.tex)) (./Resources/texmf-local/tex/latex/econtex.cls
@@ -653,7 +652,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 132.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 132.
 Package hyperref Info: Option `colorlinks' set `true' on input line 152.
- Including MathFactsList.defs) (./Resources/texmf-local/tex/latex/econtexShortcuts.sty) (/usr/local/texlive/texmf-local/tex/latex/econark.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/subfiles/subfiles.sty
+ Including MathFactsList.defs) (./Resources/texmf-local/tex/latex/econtexShortcuts.sty) (./Resources/texmf-local/tex/latex/econark.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/01/22  v 6.0
@@ -998,13 +997,13 @@ Package rerunfilecheck Info: File `EquityPremiumPuzzle.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20127 strings out of 480608
- 330789 string characters out of 5903631
- 698454 words of memory out of 5000000
- 35577 multiletter control sequences out of 15000+600000
+ 20128 strings out of 480608
+ 331028 string characters out of 5903631
+ 698564 words of memory out of 5000000
+ 35578 multiletter control sequences out of 15000+600000
  556171 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,21n,60p,10171b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,21n,60p,10167b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </usr/local/texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbmss8.600pk> </usr/local/texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbmss12.600pk>{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
