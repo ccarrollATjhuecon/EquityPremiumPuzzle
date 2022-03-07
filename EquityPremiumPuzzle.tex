@@ -223,17 +223,26 @@ Now define the proportional MPC out of an additional unit of return as
 \begin{equation}\begin{gathered}\begin{aligned}
       \kappa & = \bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo\cNxt^{-1}
     \end{aligned}\end{gathered}\end{equation}
-and calling $\EpremLog \equiv \Ex_{t}[\EpremLog_{t+1}]$ and $\Ex_{t}[(\EpremLog_{t+1}-\EpremLog)^{2}]=\sigma^{2}_{\EpremLog}$ (so $\Ex_{t}[\EpremLog_{t+1}^{2}]=\sigma^{2}_{\EpremLog}-\EpremLog^{2}]$) substitute this into the foregoing to obtain
+and calling $\EpremLog \equiv \Ex_{t}[\EpremLog_{t+1}]$ and $\Ex_{t}[(\EpremLog_{t+1}-\EpremLog)^{2}]=\sigma^{2}_{\EpremLog}$ (so $\Ex_{t}[\EpremLog_{t+1}^{2}]=\sigma^{2}_{\EpremLog}-\EpremLog^{2}$) substitute this into the foregoing to obtain
 \begin{equation}\begin{gathered}\begin{aligned}
       \Ex_{t}[
       (1{-\CRRA}
       \left(
         \kappa\riskyshare \EpremLog_{t+1}
       \right)
-      )\EpremLog_{t+1}
-      ]
-      & \approx  0
-      \\ 
+      )\EpremLog_{t+1}] & \approx 0
+      \\ \EpremLog & \approx      \CRRA   \kappa\riskyshare \Ex_{t}[\EpremLog_{t+1}^{2}      ]
+      \\ \EpremLog & \approx      \CRRA   \kappa\riskyshare (\sigma^{2}_{\EpremLog}-\EpremLog^{2})
+\\      \left(\frac{\EpremLog}{\CRRA   \kappa\riskyshare (\sigma^{2}_{\EpremLog}-\EpremLog^{2})}\right) & \approx \riskyshare
+    \end{aligned}\end{gathered}\end{equation}
+\clearpage 
+
+\input \econtexBibMake
+
+
+
+\end{document}
+\begin{equation}\begin{gathered}\begin{aligned}
       \Ex_{t}[
       1{-\CRRA}
         \kappa\riskyshare \EpremLog_{t+1}
@@ -254,10 +263,3 @@ and calling $\EpremLog \equiv \Ex_{t}[\EpremLog_{t+1}]$ and $\Ex_{t}[(\EpremLog_
     \end{aligned}\end{gathered}\end{equation}
 
 
-\clearpage 
-
-\input \econtexBibMake
-
-
-
-\end{document}
