@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -970,7 +970,7 @@ Package hyperref Info: Anchor `equation.19' on input line 226.
 Package hyperref Info: Anchor `equation.19' on input line 226.
 Package hyperref Info: Anchor `equation.19' on input line 226.
 Package hyperref Info: Anchor `page.4' on input line 258.
-[4] (./Resources/texmf-local/tex/latex/handoutBibMake.tex (./EquityPremiumPuzzle.bbl
+[4] (./Resources/texmf-local/tex/latex/econtexBibMake.tex (./EquityPremiumPuzzle.bbl
 Package hyperref Info: Anchor `section*.20' on input line 11.
 Package hyperref Info: Anchor `cite.mankiw&zeldes:stockholders' on input line 14.
 Package hyperref Info: Anchor `cite.mehraPrescottPuzzle' on input line 19.
