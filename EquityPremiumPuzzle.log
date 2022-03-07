@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 MAR 2022 00:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -532,7 +532,7 @@ LaTeX Info: Redefining \bf on input line 412.
 LaTeX Info: Redefining \it on input line 413.
 LaTeX Info: Redefining \sl on input line 414.
 LaTeX Info: Redefining \sc on input line 415.
-) (./Resources/texmf-local/tex/latex/handoutSetup.sty (/usr/local/texlive/texmf-local/tex/latex/handoutShortcuts.sty) (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
+) (./Resources/texmf-local/tex/latex/handoutSetup.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
@@ -542,8 +542,7 @@ Package: psibycus 2004/10/18 v4.5 Ibycus4 using Type1 fonts (P.A.MacKay/WaS)
 \digraphs=\toks33
  (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/ibycus4.map (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/tlgsqq.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/Uibycus.fd
 File: Uibycus.fd 2004/10/18 v4.5 font definitions for Ibycus/Type1 (WaS)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/iby4extr.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/version4.tex Ibycus Greek. Version 4. 15 July 1997)))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/ushort/ushort.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/iby4extr.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/ibygrk/version4.tex Ibycus Greek. Version 4. 15 July 1997))) (/usr/local/texlive/2020/texmf-dist/tex/latex/ushort/ushort.sty
 ushort.sty by M. Vaeth: Release: 2.2 
 Package: ushort 2001/06/13 v2.2
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -999,10 +998,10 @@ Package rerunfilecheck Info: File `EquityPremiumPuzzle.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20146 strings out of 480608
- 331134 string characters out of 5903631
- 699493 words of memory out of 5000000
- 35593 multiletter control sequences out of 15000+600000
+ 20127 strings out of 480608
+ 330789 string characters out of 5903631
+ 698454 words of memory out of 5000000
+ 35577 multiletter control sequences out of 15000+600000
  556171 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,21n,60p,10171b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
