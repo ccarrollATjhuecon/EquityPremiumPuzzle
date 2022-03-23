@@ -184,13 +184,13 @@ Designating that consumption function as $\cFunc_{t+1}(\mNrm)$, with derivative 
 
 First define $\ERport_{t+1}(\riskyshare)=\Ex_{t}[\Rport_{t+1}]$ and define consumption at the expectation of the portfolio return as
 \begin{align*}
-\bar{\cNrm}_{t+1} &= \cFunc_{t+1}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
-\\ \bar{\cNrm}^{\prime}_{t+1}& = \cFunc_{t+1}^{\prime}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
+\bar{\cNrm}_{t+1} & \equiv  \cFunc_{t+1}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
+\\ \bar{\cNrm}^{\prime}_{t+1}& \equiv \cFunc_{t+1}^{\prime}(\ERport_{t+1}{a}_{t} + \yNrm_{t+1})
 \end{align*}
 
 For simplicity, we will henceforth assume that $\yNrm_{t+1}=1$.  Results below all go through for the case where $\Ex_{t}[\yNrm_{t+1}]=1$.
 
-Calling the realized equity premium $\EpremLog_{t+1}=(\Risky_{t+1}-\Rfree)$, note that for a portfolio share of $\riskyshare$ the realized return premium will $\Rport_{t+1}=(\Risky_{t+1}-\Rfree)\riskyshare$.  Now, use $\uFunc^{\prime}(\bullet)=\bullet^{-\CRRA}$ to rewrite the FOC for $\riskyshare$, equation~\eqref{eq:ShareEuler}:
+Calling the realized equity premium $\EpremLog_{t+1}=(\Risky_{t+1}-\Rfree)$, note that for a portfolio share of $\riskyshare$ the realized return premium will be $\Rport_{t+1}=(\Risky_{t+1}-\Rfree)\riskyshare$.  Now, use $\uFunc^{\prime}(\bullet)=\bullet^{-\CRRA}$ to rewrite the FOC for $\riskyshare$, equation~\eqref{eq:ShareEuler}:
 \begin{equation}\begin{gathered}\begin{aligned}
       \Ex_{t}[(\cFunc_{t+1}(\Rport_{t+1}{a}_{t}+1))^{-\CRRA}\EpremLog_{t+1}] & =  0 \label{eq:ShareEulernewnew}
       \\ \Ex_{t}[(\cFunc_{t+1}((\Rport_{t+1}-\ERport_{t+1}+\ERport_{t+1}){a}_{t}+1))^{-\CRRA}\EpremLog_{t+1}] & =  0
@@ -208,11 +208,11 @@ Now make a first order Taylor expansion of next period's consumption around $\cN
       )^{-\CRRA}\EpremLog_{t+1}
       ]
       & \approx  0
-      \\ \Ex_{t}[(1+\cNxt^{-1}(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo))^{-\CRRA}\EpremLog_{t+1}]& \approx  0
+      \\ \Ex_{t}[(1+(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo)\cNxt^{-1})^{-\CRRA}\EpremLog_{t+1}]& \approx  0
       \\ 
       \Ex_{t}[
       (1{-\CRRA}
-      \cNxt^{-1}(\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo)
+      (\riskyshare\EpremLog_{t+1}\bar{\cFunc}^{\prime}_{t+1}{a}_{t}\orderTwo)\cNxt^{-1}
       )\EpremLog_{t+1}
       ]
       & \approx  0
