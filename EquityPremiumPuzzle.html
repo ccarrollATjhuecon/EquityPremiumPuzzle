@@ -1,0 +1,783 @@
+<!DOCTYPE html> 
+<html lang="en" xml:lang="en" > 
+<head>
+  <title></title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="EquityPremiumPuzzle.css" /> 
+<meta name="src" content="EquityPremiumPuzzle.tex"> 
+</head><body 
+>
+<!--l. 6--><p class="noindent" ><img 
+src="EquityPremiumPuzzle0x.svg" alt="© " class="math";align="absmiddle"><span 
+class="ecrm-0600">October 30, 2023, </span><a 
+href="https://www.econ2.jhu.edu/people/ccarroll/" ><span 
+class="ecrm-0600">Christopher D. Carroll</span></a>                                                                                       <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes" ><span 
+class="ecrm-0600">EquityPremiumPuzzle</span></a>
+   <div  
+class="centerline">  <span 
+class="ecrm-2074">The Equity Premium Puzzle and the Riskfree Rate</span>  </div>
+<!--l. 15--><p class="indent" >   <a 
+href="#XmehraPrescottPuzzle"><span 
+class="ecrm-1440">Mehra and Prescott</span></a><span 
+class="ecrm-1440"> (</span><a 
+href="#XmehraPrescottPuzzle"><span 
+class="ecrm-1440">1985</span></a><span 
+class="ecrm-1440">) consider a representative agent solving the joint</span>
+<span 
+class="ecrm-1440">consumption and portfolio allocation problem:</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-2r1"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle1x.svg" alt="                             [                ]
+                               ∑∞
+v(mt ) =  max    u (ct) + 𝔼t       βnu  (ct+n )
+          {ct,ςt}
+                               n=1
+      s.t.
+
+ mt+1  =  (mt  − ct)Rt+1  +  yt+1
+
+ Rt+1  =  ςtRt+1  + (1 −  ςt)R
+" class="math-display" ></div>
+   </td></tr></table>
+<!--l. 21--><p class="nopar" >
+<span 
+class="ecrm-1440">where</span> <img 
+src="EquityPremiumPuzzle2x.svg" alt="R  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">denotes the return on a perfectly riskless asset and</span> <img 
+src="EquityPremiumPuzzle3x.svg" alt="Rt+1   " class="math";align="absmiddle"> <span 
+class="ecrm-1440">denotes the</span>
+<span 
+class="ecrm-1440">return on equities (the risky asset) held between periods</span> <img 
+src="EquityPremiumPuzzle4x.svg" alt="t  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">and</span> <img 
+src="EquityPremiumPuzzle5x.svg" alt="t + 1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">;</span> <img 
+src="EquityPremiumPuzzle6x.svg" alt="ςt  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is</span>
+<span 
+class="ecrm-1440">the share of end-of-period savings invested in the risky asset;</span> <img 
+src="EquityPremiumPuzzle7x.svg" alt="Rt+1   " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is the</span>
+<span 
+class="ecrm-1440">portfolio-weighted rate of return; and</span> <img 
+src="EquityPremiumPuzzle8x.svg" alt="yt+1   " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is noncapital income in period</span>
+<img 
+src="EquityPremiumPuzzle9x.svg" alt="t +  1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">.</span>
+<!--l. 24--><p class="indent" >   <span 
+class="ecrm-1440">As usual, the objective can be rewritten in recursive form:</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3r1"></a>
+                                                                                     
+                                                                                     
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle10x.svg" alt="                                ⌊   (                                          ) ⌋
+
+
+v (mt ) =  max    u (ct) + β 𝔼t ⌈v  ( [ςtRt+1--+  (1-−-ςt)R-](mt −  ct) + yt+1 ) ⌉
+           {ct,ςt}                      ◟         ◝◜         ◞
+                                               Rt+1
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(1)</span></td></tr></table>
+<!--l. 27--><p class="nopar" >
+<!--l. 29--><p class="indent" >   <span 
+class="ecrm-1440">The ﬁrst order condition with respect to</span> <img 
+src="EquityPremiumPuzzle11x.svg" alt="ct  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-4r2"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle12x.svg" alt=" ′                    ′
+u (ct) =  β 𝔼t[Rt+1v  (mt+1  )].
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(2)</span></td></tr></table>
+<!--l. 32--><p class="nopar" >
+<span 
+class="ecrm-1440">and, taking</span> <img 
+src="EquityPremiumPuzzle13x.svg" alt="m  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">and</span> <img 
+src="EquityPremiumPuzzle14x.svg" alt="c  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">as given, the FOC with respect to</span> <img 
+src="EquityPremiumPuzzle15x.svg" alt="ςt  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-5r3"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle16x.svg" alt="                  ′
+𝔼t [(Rt+1  −  R)v (mt+1  )(mt  −  ct)] = 0
+                  ′
+𝔼t [(Rt+1  −  R)v (mt+1  )           ] = 0.
+" class="math-display" ></div>
+                                                                                     
+                                                                                     
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(3)</span></td></tr></table>
+<!--l. 38--><p class="nopar" >
+<!--l. 40--><p class="indent" >   <span 
+class="ecrm-1440">But the usual logic of the </span><a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/consumption/Envelope" ><span 
+class="ectt-1440">Envelope</span></a> <span 
+class="ecrm-1440">theorem tells us that</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6r4"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle17x.svg" alt="  ′           ′
+u (ct+1 ) =  v (mt+1 ),
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(4)</span></td></tr></table>
+<!--l. 43--><p class="nopar" >
+<span 
+class="ecrm-1440">so, substituting (</span><a 
+href="#x1-6r4"><span 
+class="ecrm-1440">4</span><!--tex4ht:ref: eq:envelope --></a><span 
+class="ecrm-1440">) into (</span><a 
+href="#x1-4r2"><span 
+class="ecrm-1440">2</span><!--tex4ht:ref: eq:cfoc --></a><span 
+class="ecrm-1440">) and (</span><a 
+href="#x1-5r3"><span 
+class="ecrm-1440">3</span><!--tex4ht:ref: eq:gamfoc --></a><span 
+class="ecrm-1440">), the above FOC’s reduce to</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-7r5"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle18x.svg" alt="u ′(c ) =  𝔼  [βR     u′(c   )],
+     t      t    t+1     t+1
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(5)</span></td></tr></table>
+<!--l. 47--><p class="nopar" >
+<span 
+class="ecrm-1440">and</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-8r6"></a>
+                                                                                     
+                                                                                     
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle19x.svg" alt="                  ′
+𝔼t [(Rt+1  − R )u (ct+1 )] = 0.
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(6)</span></td></tr></table>
+<!--l. 51--><p class="nopar" >
+<!--l. 54--><p class="indent" >   <span 
+class="ecrm-1440">Now assume CRRA utility,</span> <img 
+src="EquityPremiumPuzzle20x.svg" alt="u(c) =  c1− ρ∕(1 −  ρ)  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">and divide both sides by</span>
+<img 
+src="EquityPremiumPuzzle21x.svg" alt=" − ρ
+ct  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">to get</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-9r7"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle22x.svg" alt="𝔼  [(c   ∕c )− ρ(R     −  R )] = 0.
+  t   t+1   t      t+1
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(7)</span></td></tr></table>
+<!--l. 58--><p class="nopar" >
+<span 
+class="ecrm-1440">and the consumption ratio can of course be rewritten as</span>
+   <div class="align"><img 
+src="EquityPremiumPuzzle23x.svg" alt="pict" ><a 
+ id="x1-10r8"></a></div>
+                                                                                     
+                                                                                     
+<!--l. 70--><p class="noindent" ><span 
+class="ecrm-1440">Now use the fact </span><a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/MathFactsList/TaylorOne" ><span 
+class="ectt-1440">TaylorOne</span></a><span 
+class="ecrm-1440">:</span>
+      <blockquote class="quote">
+     <ul class="itemize1">
+     <li class="itemize"><span 
+class="ecrm-1440">If</span> <img 
+src="EquityPremiumPuzzle24x.svg" alt="z  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is small,</span> <img 
+src="EquityPremiumPuzzle25x.svg" alt="(1 +  z)λ ≈  1 +  λz  " class="math";align="absmiddle"></li></ul>
+      </blockquote>                                                                                 <span 
+class="ecrm-1440">to</span>
+<span 
+class="ecrm-1440">approximate equation (</span><a 
+href="#x1-9r7"><span 
+class="ecrm-1440">7</span><!--tex4ht:ref: eq:ShareEulernew --></a><span 
+class="ecrm-1440">)</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-11r9"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle26x.svg" alt="𝔼 [(1 −  ρΔ  log c   )(R      − R )] ≈ 0.
+  t               t+1     t+1
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(9)</span></td></tr></table>
+<!--l. 74--><p class="nopar" >
+<!--l. 76--><p class="noindent" ><span 
+class="ecrm-1440">Using one more fact,</span>
+      <blockquote class="quote">
+     <ul class="itemize1">
+     <li class="itemize"><img 
+src="EquityPremiumPuzzle27x.svg" alt="𝔼[xy ] = 𝔼 [x ]𝔼 [y ] + cov (x,y ),  " class="math";align="absmiddle"></li></ul>
+      </blockquote>
+<!--l. 82--><p class="noindent" ><span 
+class="ecrm-1440">we get</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-12r10"></a>
+                                                                                     
+                                                                                     
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle28x.svg" alt="(1 −  ρ 𝔼t[Δ  log ct+1])(R −  𝔼t [Rt+1  ]) + covt (− ρΔ  log ct+1,−  Rt+1 ) ≈  0
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(10)</span></td></tr></table>
+<!--l. 85--><p class="nopar" >
+<span 
+class="ecrm-1440">or</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-13r11"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle29x.svg" alt="                   ρcovt-(Δ--log--ct+1,-Rt+1--)
+𝔼t [Rt+1 ] − R  ≈
+                     1 −  ρ 𝔼t[Δ  log  ct+1 ]
+                ≈  ρcovt (Δ log ct+1, Rt+1 )
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(11)</span></td></tr></table>
+<!--l. 90--><p class="nopar" >
+<span 
+class="ecrm-1440">where the last approximation holds because</span> <img 
+src="EquityPremiumPuzzle30x.svg" alt="𝔼  [Δ  log c    ]
+  t         t+1  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is small. (See the</span>
+<span 
+class="ecrm-1440">appendix for a derivation of the portfolio share when next period’s consumption</span>
+<span 
+class="ecrm-1440">function is known).</span>
+<!--l. 96--><p class="noindent" ><span 
+class="ecbx-1440">The Equity Premium Puzzle</span>
+<!--l. 98--><p class="indent" >   <span 
+class="ecrm-1440">Because this expression must hold at all</span> <img 
+src="EquityPremiumPuzzle31x.svg" alt="t  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, we can check it empirically by</span>
+<span 
+class="ecrm-1440">calculating empirical estimates of the two components and assuming</span>
+<span 
+class="ecrm-1440">that the sample averages correspond to the representative agent’s</span>
+<span 
+class="ecrm-1440">expectations. That is, if we have data for periods</span> <img 
+src="EquityPremiumPuzzle32x.svg" alt="1 ...n  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, we assume</span>
+<span 
+class="ecrm-1440">that the unconditional expectations correspond to the sample means,</span>
+                                                                                     
+                                                                                     
+<img 
+src="EquityPremiumPuzzle33x.svg" alt="                ∑n
+𝔼 [R  ] = (1∕n )    s=1 Rs  " class="math";align="absmiddle"><span 
+class="ecrm-1440">;</span> <img 
+src="EquityPremiumPuzzle34x.svg" alt="                     ∑n
+𝔼 [Δ  log c] = (1 ∕n )   s=1 Δ  log  cs  " class="math";align="absmiddle"><span 
+class="ecrm-1440">; and</span>
+<img 
+src="EquityPremiumPuzzle35x.svg" alt="                            ∑
+cov (Δ  log c,R ) =  (1∕n )    n  (Δ  log c  − 𝔼 [Δ  log  c])(R   −  𝔼 [R ]).
+                               s=1         s                   s  " class="math";align="absmiddle">
+<!--l. 109--><p class="indent" >   <span 
+class="ecrm-1440">The equity premium puzzle is essentially that</span> <img 
+src="EquityPremiumPuzzle36x.svg" alt="cov( Δ log c, R )  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is very small</span>
+<span 
+class="ecrm-1440">(about 0.004) but</span> <img 
+src="EquityPremiumPuzzle37x.svg" alt="𝔼 [R  ] − R  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is about 0.08 (stocks have earned real returns of</span>
+<span 
+class="ecrm-1440">about 8 percent more than riskless assets over the historical period), which</span>
+<span 
+class="ecrm-1440">means that the only way equation (</span><a 
+href="#x1-13r11"><span 
+class="ecrm-1440">11</span><!--tex4ht:ref: eq:eqprem --></a><span 
+class="ecrm-1440">) can hold is if</span> <img 
+src="EquityPremiumPuzzle38x.svg" alt="ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is implausibly large</span>
+<span 
+class="ecrm-1440">(these values imply a value of</span> <img 
+src="EquityPremiumPuzzle39x.svg" alt="ρ =  20  " class="math";align="absmiddle"><span 
+class="ecrm-1440">).</span>
+<!--l. 116--><p class="indent" >   <span 
+class="ecrm-1440">How do we know what plausible values of</span> <img 
+src="EquityPremiumPuzzle40x.svg" alt="ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">are? Consider the following. You</span>
+<span 
+class="ecrm-1440">must choose between a gamble in which you consume $50,000 for the rest of your</span>
+<span 
+class="ecrm-1440">life with probability 0.5 and $100,000 with probability 0.5, or consuming some</span>
+<span 
+class="ecrm-1440">amount</span> <img 
+src="EquityPremiumPuzzle41x.svg" alt="X  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">with certainty. The coeﬃcient of relative risk aversion determines</span>
+<span 
+class="ecrm-1440">the</span> <img 
+src="EquityPremiumPuzzle42x.svg" alt="X  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">which would make you indiﬀerent between consuming X or being</span>
+<span 
+class="ecrm-1440">exposed to the gamble. For example, if</span> <img 
+src="EquityPremiumPuzzle43x.svg" alt="ρ =  0  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, then you have no risk aversion at</span>
+<span 
+class="ecrm-1440">all and you will be indiﬀerent between $75,000 with certainty and the 50/50</span>
+<span 
+class="ecrm-1440">gamble with expected value of $75,000. Here are the values of X associated with</span>
+<span 
+class="ecrm-1440">diﬀerent values of</span> <img 
+src="EquityPremiumPuzzle44x.svg" alt="ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">(table taken from Mankiw and Zeldes</span><span 
+class="ecrm-1440"> </span><a 
+href="#Xmankiw&zeldes:stockholders"><span 
+class="ecrm-1440">Mankiw and</span>
+<span 
+class="ecrm-1440">Zeldes</span></a><span 
+class="ecrm-1440"> (</span><a 
+href="#Xmankiw&zeldes:stockholders"><span 
+class="ecrm-1440">1989</span></a><span 
+class="ecrm-1440">).)</span>
+   <div class="table">
+                                                                                     
+                                                                                     
+<!--l. 131--><p class="indent" >   <figure class="float" 
+>
+                                                                                     
+                                                                                     
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+ 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><colgroup id="TBL-1-2g"><col 
+id="TBL-1-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
+class="td11"> <img 
+src="EquityPremiumPuzzle45x.svg" alt="ρ  " class="math";align="absmiddle">  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-2"  
+class="td11">  <img 
+src="EquityPremiumPuzzle46x.svg" alt="X  " class="math";align="absmiddle">   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-1"  
+class="td11">  1   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-2"  
+class="td11"> 70,711  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-3-1"  
+class="td11">  3   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-3-2"  
+class="td11"> 63,246  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-4-1"  
+class="td11">  5   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-4-2"  
+class="td11"> 58,565  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-5-1"  
+class="td11">  10   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-5-2"  
+class="td11"> 53,991  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-6-1"  
+class="td11">  20   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-6-2"  
+class="td11"> 51,858  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-7-1"  
+class="td11">  30   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-7-2"  
+class="td11"> 51,209  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-8-1"  
+class="td11"> <img 
+src="EquityPremiumPuzzle47x.svg" alt="∞ " class="math";align="absmiddle"> </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-8-2"  
+class="td11"> 50,000  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-9-1"  
+class="td11">     </td></tr></table></div>
+                                                                                     
+                                                                                     
+   </figure>
+   </div>
+                                                                                     
+                                                                                     
+<!--l. 166--><p class="noindent" ><span 
+class="ecbx-1440">The Riskfree Rate Puzzle</span>
+<span 
+class="ecrm-1440">Rewrite the consumption Euler equation (</span><a 
+href="#x1-7r5"><span 
+class="ecrm-1440">5</span><!--tex4ht:ref: eq:ceuler --></a><span 
+class="ecrm-1440">) as</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-14r12"></a>
+<div class="math-display" >
+<img 
+src="EquityPremiumPuzzle48x.svg" alt=" ′                                    ′
+u (ct) =  𝔼t [β(R  + ςt[Rt+1  −  R])u (ct+1 )]
+" class="math-display" ></div>
+</td><td class="equation-label"><span 
+class="ecrm-1440">(12)</span></td></tr></table>
+<span 
+class="ecrm-1440">and note that from (</span><a 
+href="#x1-9r7"><span 
+class="ecrm-1440">7</span><!--tex4ht:ref: eq:ShareEulernew --></a><span 
+class="ecrm-1440">) we know that</span> <img 
+src="EquityPremiumPuzzle49x.svg" alt="                     ′
+𝔼t[β ςt(Rt+1  − R )u (ct+1 )] = 0  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">so that</span>
+<span 
+class="ecrm-1440">(</span><a 
+href="#x1-14r12"><span 
+class="ecrm-1440">12</span><!--tex4ht:ref: eq:newgam --></a><span 
+class="ecrm-1440">) reduces to the ordinary Euler equation</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-15r13"></a>
+<div class="math-display" >
+<img 
+src="EquityPremiumPuzzle50x.svg" alt="u ′(c ) =  𝔼  [βRu  ′(c   )]
+     t      t        t+1
+     1 =  βR  𝔼t[(ct+1 ∕ct)− ρ ].
+" class="math-display" ></div>
+</td><td class="equation-label"><span 
+class="ecrm-1440">(13)</span></td></tr></table>
+<span 
+class="ecrm-1440">Using the same ‘facts’ and approximations as above, we get the standard</span>
+<span 
+class="ecrm-1440">approximation to the Euler equation,</span>
+<table 
+class="equation"><tr><td><a 
+ id="x1-16r14"></a>
+<div class="math-display" >
+<img 
+src="EquityPremiumPuzzle51x.svg" alt="Δ  log  c    ≈  (1∕ρ )(r − 𝜗 ).
+        t+1
+" class="math-display" ></div>
+</td><td class="equation-label"><span 
+class="ecrm-1440">(14)</span></td></tr></table>                                                                                  <span 
+class="ecrm-1440">The</span>
+                                                                                     
+                                                                                     
+<span 
+class="ecrm-1440">‘riskfree rate puzzle’ is that average consumption growth per  capita has been</span>
+<span 
+class="ecrm-1440">about 1.5 percent (in the US in the postwar period) while real riskfree interest</span>
+<span 
+class="ecrm-1440">rates have been at most 1 percent. Even if we assume a time preference rate of</span>
+<img 
+src="EquityPremiumPuzzle52x.svg" alt="𝜗  = 0  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">(no impatience at all, e.g.</span> <img 
+src="EquityPremiumPuzzle53x.svg" alt="β  =  1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">), the only way this equation can hold</span>
+<span 
+class="ecrm-1440">is if</span> <img 
+src="EquityPremiumPuzzle54x.svg" alt="ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">is a very small number (maybe even less than one). Of course, this is</span>
+<span 
+class="ecrm-1440">precisely the opposite of the conclusion of the equity premium puzzle, which</span>
+<span 
+class="ecrm-1440">implies the</span> <img 
+src="EquityPremiumPuzzle55x.svg" alt="ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">must be very large.</span>
+                                                                                     
+                                                                                     
+   <div  
+class="centerline">                                          <span 
+class="ecrm-1728">Appenix</span>                                    </div>
+   <div  
+class="centerline">      <span 
+class="ecbx-1728">The risky portfolio share when</span> <img 
+src="EquityPremiumPuzzle56x.svg" alt="c
+ t+1   " class="math";align="absmiddle">  <span 
+class="ecbx-1728">is Known</span>      </div>
+<!--l. 177--><p class="indent" >   <span 
+class="ecrm-1440">In either the life cycle version of the model or an inﬁnite horizon model that is</span>
+<span 
+class="ecrm-1440">being solved by time iteration, the consumption function in</span> <img 
+src="EquityPremiumPuzzle57x.svg" alt="t + 1  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">will be</span>
+<span 
+class="ecrm-1440">known.</span>
+<!--l. 179--><p class="indent" >   <span 
+class="ecrm-1440">Designating that consumption function as</span> <img 
+src="EquityPremiumPuzzle58x.svg" alt="ct+1(m  )  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, with derivative</span>
+<img 
+src="EquityPremiumPuzzle59x.svg" alt="c′   (m )
+ t+1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, we can derive an approximation to the optimal portfolio share as</span>
+<span 
+class="ecrm-1440">follows.</span>
+<!--l. 186--><p class="indent" >   <span 
+class="ecrm-1440">First deﬁne</span> <img 
+src="EquityPremiumPuzzle60x.svg" alt="¯R    (ς) =  𝔼 [R    ]
+  t+1          t  t+1  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">and deﬁne consumption at the expectation of</span>
+<span 
+class="ecrm-1440">the portfolio return as</span>
+   <div class="align"><img 
+src="EquityPremiumPuzzle61x.svg" alt="pict" ></div>
+<!--l. 192--><p class="indent" >   <span 
+class="ecrm-1440">For simplicity, we will henceforth assume that</span> <img 
+src="EquityPremiumPuzzle62x.svg" alt="yt+1 =  1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">. Results below all go</span>
+<span 
+class="ecrm-1440">through for the case where</span> <img 
+src="EquityPremiumPuzzle63x.svg" alt="𝔼t [yt+1 ] = 1  " class="math";align="absmiddle"><span 
+class="ecrm-1440">.</span>
+<!--l. 194--><p class="indent" >   <span 
+class="ecrm-1440">Calling the realized equity premium</span> <img 
+src="EquityPremiumPuzzle64x.svg" alt="φt+1  = (Rt+1   − R )  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, note that for a</span>
+<span 
+class="ecrm-1440">portfolio share of</span> <img 
+src="EquityPremiumPuzzle65x.svg" alt="ς  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">the realized return premium will be</span> <img 
+src="EquityPremiumPuzzle66x.svg" alt="Rt+1  = (Rt+1   − R )ς  " class="math";align="absmiddle"><span 
+class="ecrm-1440">.</span>
+<span 
+class="ecrm-1440">Now, use</span> <img 
+src="EquityPremiumPuzzle67x.svg" alt="u ′(∙) =  ∙− ρ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">to rewrite the FOC for</span> <img 
+src="EquityPremiumPuzzle68x.svg" alt="ς  " class="math";align="absmiddle"><span 
+class="ecrm-1440">, equation</span><span 
+class="ecrm-1440"> </span><span 
+class="ecrm-1440">(</span><a 
+href="#x1-8r6"><span 
+class="ecrm-1440">6</span><!--tex4ht:ref: eq:ShareEuler --></a><span 
+class="ecrm-1440">)</span><span 
+class="ecrm-1440">:</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-17r15"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle69x.svg" alt="                    𝔼t[(ct+1(Rt+1at  +  1) )− ρφt+1 ] = 0
+
+𝔼t [(ct+1((Rt+1  −  ¯Rt+1  + R¯t+1  )at + 1) )− ρφt+1 ] = 0
+                   ¯                        − ρ
+        𝔼t [(ct+1 ((Rt+1  + ς φt+1 )at + 1) )  φt+1 ] = 0
+" class="math-display" ></div>
+                                                                                     
+                                                                                     
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(15)</span></td></tr></table>
+<!--l. 199--><p class="nopar" >
+<!--l. 201--><p class="indent" >   <span 
+class="ecrm-1440">Now make a ﬁrst order Taylor expansion of next period’s consumption around</span>
+<img 
+src="EquityPremiumPuzzle70x.svg" alt="¯ct+1   " class="math";align="absmiddle"> <span 
+class="ecrm-1440">(you could use a second order expansion for an even more accurate</span>
+<span 
+class="ecrm-1440">approximation), and then use </span><a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/lecturenotes/MathFactsList/TaylorOne" ><span 
+class="ectt-1440">TaylorOne</span></a><span 
+class="ecrm-1440">:</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-18r16"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle71x.svg" alt="             𝔼 [(¯c    +  ςφ    ¯c′  a )− ρφ    ] ≈ 0
+              t   t+1       t+1  t+1  t     t+1
+(¯ct+1 )− ρ 𝔼t [(1 + ¯c− 1 (ςφt+1 ¯c′  at))− ρφt+1 ] ≈ 0
+                   t+1     ′   t+1− 1 − ρ
+         𝔼t [(1 +  (ςφt+1 ¯c t+1at )¯ct+1)   φt+1 ] ≈ 0
+                             ′       − 1
+           𝔼t [(1− ρ (ςφt+1 ¯ct+1at )¯ct+1 )φt+1 ] ≈ 0
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(16)</span></td></tr></table>
+<!--l. 220--><p class="nopar" >
+<span 
+class="ecrm-1440">where the last step uses</span> <img 
+src="EquityPremiumPuzzle72x.svg" alt="        δ
+(1 +  𝜖)  ≈  (1 + δ 𝜖)  " class="math";align="absmiddle"><span 
+class="ecrm-1440">.</span>
+<!--l. 223--><p class="indent" >   <span 
+class="ecrm-1440">Now deﬁne the proportional MPC out of an additional unit of return</span>
+<span 
+class="ecrm-1440">as</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-19r17"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle73x.svg" alt="κ =  ¯c′  a ¯c − 1
+      t+1  t t+1
+" class="math-display" ></div>
+                                                                                     
+                                                                                     
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(17)</span></td></tr></table>
+<!--l. 226--><p class="nopar" >
+<span 
+class="ecrm-1440">and calling</span> <img 
+src="EquityPremiumPuzzle74x.svg" alt="φ ≡  𝔼t [φt+1 ]  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">and</span> <img 
+src="EquityPremiumPuzzle75x.svg" alt="                2      2
+𝔼t [(φt+1  −  φ ) ] = σ φ  " class="math";align="absmiddle"> <span 
+class="ecrm-1440">(so</span> <img 
+src="EquityPremiumPuzzle76x.svg" alt="     2        2      2
+𝔼t [φ t+1] =  σφ −  φ   " class="math";align="absmiddle"><span 
+class="ecrm-1440">)</span>
+<span 
+class="ecrm-1440">substitute this into the foregoing to obtain</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-20r18"></a>
+   <div class="math-display" >
+<img 
+src="EquityPremiumPuzzle77x.svg" alt="𝔼  [(1 − ρ (κς φ    ))φ    ] ≈ 0
+  t            t+1    t+1
+                         φ ≈  ρκ ς 𝔼t[φ2   ]
+                                     2  t+1 2
+                         φ ≈  ρκ ς(σ φ − φ  )
+        (               )
+          ------φ--------
+          ρκ (σ2  − φ2 )   ≈  ς
+                φ
+" class="math-display" ></div>
+   </td><td class="equation-label"><span 
+class="ecrm-1440">(18)</span></td></tr></table>
+<!--l. 238--><p class="nopar" >
+                                                                                     
+                                                                                     
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a><span 
+class="ecrm-1440">References</span></h3>
+<!--l. 5--><p class="noindent" >
+  <div class="thebibliography">
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xmankiw&zeldes:stockholders"></a><span class="bibsp"><span 
+class="ecrm-1440"> </span><span 
+class="ecrm-1440"> </span><span 
+class="ecrm-1440"> </span></span></span><span 
+class="eccc1440-"><span 
+class="small-caps">M</span><span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">k</span><span 
+class="small-caps">i</span><span 
+class="small-caps">w</span><span 
+class="small-caps">,</span>  <span 
+class="small-caps">N</span><span 
+class="small-caps">.</span></span><span 
+class="eccc1440-"> <span 
+class="small-caps">G</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span><span 
+class="small-caps">g</span><span 
+class="small-caps">o</span><span 
+class="small-caps">r</span><span 
+class="small-caps">y</span><span 
+class="small-caps">,</span>  <span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span>  <span 
+class="small-caps">S</span><span 
+class="small-caps">t</span><span 
+class="small-caps">e</span><span 
+class="small-caps">p</span><span 
+class="small-caps">h</span><span 
+class="small-caps">e</span><span 
+class="small-caps">n</span></span><span 
+class="eccc1440-"> <span 
+class="small-caps">P</span><span 
+class="small-caps">.</span>  <span 
+class="small-caps">Z</span><span 
+class="small-caps">e</span><span 
+class="small-caps">l</span><span 
+class="small-caps">d</span><span 
+class="small-caps">e</span><span 
+class="small-caps">s</span> </span><span 
+class="ecrm-1440">(1989):  “The</span>
+  <span 
+class="ecrm-1440">Consumption   of   Stockholders   and   Non   Stockholders,”   </span><span 
+class="ecti-1440">Journal  of</span>
+  <span 
+class="ecti-1440">Financial Economics</span><span 
+class="ecrm-1440">, 15, 145–61.</span>
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="XmehraPrescottPuzzle"></a><span class="bibsp"><span 
+class="ecrm-1440"> </span><span 
+class="ecrm-1440"> </span><span 
+class="ecrm-1440"> </span></span></span><span 
+class="eccc1440-"><span 
+class="small-caps">M</span><span 
+class="small-caps">e</span><span 
+class="small-caps">h</span><span 
+class="small-caps">r</span><span 
+class="small-caps">a</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">R</span><span 
+class="small-caps">a</span><span 
+class="small-caps">j</span><span 
+class="small-caps">n</span><span 
+class="small-caps">i</span><span 
+class="small-caps">s</span><span 
+class="small-caps">h</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span> <span 
+class="small-caps">E</span><span 
+class="small-caps">d</span><span 
+class="small-caps">w</span><span 
+class="small-caps">a</span><span 
+class="small-caps">r</span><span 
+class="small-caps">d</span></span><span 
+class="eccc1440-"> <span 
+class="small-caps">C</span><span 
+class="small-caps">.</span> <span 
+class="small-caps">P</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span><span 
+class="small-caps">s</span><span 
+class="small-caps">c</span><span 
+class="small-caps">o</span><span 
+class="small-caps">t</span><span 
+class="small-caps">t</span> </span><span 
+class="ecrm-1440">(1985): “The Equity</span>
+  <span 
+class="ecrm-1440">Premium: A Puzzle,” </span><span 
+class="ecti-1440">Journal of Monetary Economics</span><span 
+class="ecrm-1440">, 15, 145–61.</span>
+</p>
+  </div>
+    
+</body> 
+</html>
+                                                                                     
+
+
